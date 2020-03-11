@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+   xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <ListPreference
+      android:entries="@array/guesses_list"
+      android:entryValues="@array/guesses_list"
+      android:key="pref_numberOfChoices"
+      android:title="@string/number_of_choices"
+      android:summary="@string/number_of_choices_description"
+      android:persistent="true"
+      android:defaultValue="4" />
+
+   <MultiSelectListPreference
+      android:entries="@array/animal_type_list_for_settings"
+      android:entryValues="@array/animal_types_list"
+      android:key="pref_animalTypesToInclude"
+      android:title="@string/world_animal_types"
+      android:summary="@string/animal_type_description"
+      android:persistent="true"
+      android:defaultValue="@array/animal_types_list" />
+
+   <SwitchPreference
+       android:defaultValue="false"
+       android:key="sound_option"
+       android:title="Sound Option"
+       android:summaryOff="Sound off"
+       android:summaryOn="Sound on"/>
+
+</PreferenceScreen>
